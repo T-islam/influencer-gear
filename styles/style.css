@@ -247,3 +247,45 @@ nav a:not(:last-child) {
   padding: 6px;
   color: #ffffff;
 }
+.menu-mobile,
+.mobile-cart {
+  display: none;
+}
+/* media queari for mobile */
+@media screen and (max-width: 576px) {
+  nav {
+    display: none;
+  }
+  .menu-mobile,
+  .mobile-cart {
+    display: inline-block;
+  }
+  .top-bar {
+    align-items: center;
+  }
+  .header__content,
+  .future__products {
+    flex-direction: column;
+  }
+  .container {
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+  }
+  .header--title,
+  .header--images {
+    width: 100%;
+  }
+  .brand-logos {
+    flex-wrap: wrap;
+    padding: 1.25em 1.875em;
+  }
+  .populer__collection {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .card__products {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
