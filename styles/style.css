@@ -256,20 +256,32 @@ nav a:not(:last-child) {
   nav {
     display: none;
   }
+  .mobile-cart {
+    color: var(--font-color);
+    font-weight: 700;
+  }
   .menu-mobile,
   .mobile-cart {
     display: inline-block;
   }
   .top-bar {
     align-items: center;
+    margin-top: 35px;
   }
   .header__content,
   .future__products {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .header--title h1 {
+    font-size: 28px;
+  }
+  .header--title {
+    margin-bottom: 2rem;
   }
   .container {
     margin: 0;
-    padding: 5px;
+    padding: 10px;
     width: 100%;
   }
   .header--title,
@@ -281,7 +293,7 @@ nav a:not(:last-child) {
     padding: 1.25em 1.875em;
   }
   .populer__collection {
-    padding: 0;
+    padding: 0 3rem;
     margin: 0 auto;
   }
   .card__products {
